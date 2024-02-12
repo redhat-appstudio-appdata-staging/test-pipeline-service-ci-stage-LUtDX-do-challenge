@@ -9,9 +9,9 @@ metadata:
     app.kubernetes.io/name: devfile-sample-cgqz
     app.kubernetes.io/part-of: test-pipeline-service-ci-stage
   name: devfile-sample-cgqz
-  namespace: sabhardw-tenant
 spec:
-  replicas: 1
+  replicas: 0
+  revisionHistoryLimit: 0
   selector:
     matchLabels:
       app: nodejs-app

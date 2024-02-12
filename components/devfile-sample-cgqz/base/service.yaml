@@ -9,10 +9,10 @@ metadata:
     app.kubernetes.io/name: devfile-sample-cgqz
     app.kubernetes.io/part-of: test-pipeline-service-ci-stage
   name: devfile-sample-cgqz
-  namespace: sabhardw-tenant
 spec:
   ports:
-  - port: 3001
+  - name: "3001"
+    port: 3001
     targetPort: 3001
   selector:
     app.kubernetes.io/instance: devfile-sample-cgqz
